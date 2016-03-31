@@ -5,6 +5,8 @@ class CreateMarionettes < ActiveRecord::Migration
       t.string :element
       t.integer :health, default: 20
 
+      t.references :user
+
       t.timestamps null: false
     end
   end
