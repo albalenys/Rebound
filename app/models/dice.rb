@@ -6,7 +6,6 @@ attr_reader :ratio
   end
 
   def roll(ratio)
-    roll = rand(1..ratio)
-    return roll == ratio
+    rand(1..ratio) == ratio
   end
 end
